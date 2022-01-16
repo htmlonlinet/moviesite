@@ -1,5 +1,5 @@
 <title>moviesite</title>
 <script src="signup.js">
   //check if user is signed in
-  if(getCookie("username")){alert("welcome back")}else{window.location.assign("signup.html");}
+  if(localStorage.getItem("username")){alert("welcome back")}else{window.location.assign("signup.html");}
 </script>
