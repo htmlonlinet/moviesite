@@ -1,1 +1,8 @@
 <title>moviesite</title>
+<script src="signup.js">
+  //check if user is signed in
+  var username = getCookie("username");
+  if(username == null){
+    window.location.assign("signup.html");
+  }
+</script>
