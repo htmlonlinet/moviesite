@@ -5,7 +5,9 @@
   //check if user is signed in
   if(localStorage.getItem("username")){alert("welcome back");
                                        document.getElementById("signup").style.display ="none";}else{
-                                         document.getElementById("signup").style.display = "block";}
+                                         document.getElementById("signup").style.display = "block";
+                                         document.getElementById("login").innerText = "login to see movies";}
                                          
 </script>
 <h1>Movies</h1>
+<div class="movies" id="movies"><p id="login"></p></div>
