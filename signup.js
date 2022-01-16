@@ -4,3 +4,6 @@ function save(){
     alert("enter value");
   }
 }
+if(localStorage.getItem("username", document.forms.signup.user.value)){
+  alert("welcome back");
+}                        
