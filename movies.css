@@ -7,5 +7,7 @@ body{
 }
 .movies p{
   color:white;
+}
+.movies{
   border:solid white;
 }
