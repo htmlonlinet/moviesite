@@ -1,3 +1,5 @@
-var hash = window.location.hash;
-hash.split("#s=");
-window.location.href = hash + ".html";
+if(window.location.href == "https://moviesto.netlify.app/movie/" + window.location.hash){
+  var path = window.location.pathname;
+  path.split("#s=");
+  window.location.pathname = path + window.location.hash;
+}
