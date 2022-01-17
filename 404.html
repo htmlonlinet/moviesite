@@ -1,5 +1,7 @@
 <h1>404</h1>
 <p>Sorry, but the page you search for doesn't exist</p>
 <script>
-  document.write("The page:" + window.location.pathname + ": Might not exist, or it's a spelling error");
+  var path = window.location.pathname;
+  path.split("/");
+  document.write("The page:" + path + ": Might not exist, or it's a spelling error");
 </script>
