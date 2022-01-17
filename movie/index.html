@@ -1,4 +1,4 @@
 <script src="search.js"></script>
-<h1>search results for:<script>document.write(localStorage.getItem("search"))</script></h1>
-<a id="a"></a>
-<body onload="document.getElementById('a').href = localStorage.getItem('search'); document.getElementById('a').innerText = localStorage.getItem('search');"></body>
+<h1>search results for:<script>document.write(window.location.hash);</script></h1>
+<a id="a" href='javascript:window.location.hash'></a>
+<body onload="document.getElementById('a').innerText = window.location.hash;"></body>
