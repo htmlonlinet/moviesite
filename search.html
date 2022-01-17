@@ -1,7 +1,7 @@
 <script src="search.js"></script>
 <script>
-    var path = window.location.pathname;
-    path.split("/search.html?s=");
-    path.split("/search?s=");
+    var path = window.location.href;
+    path.split("https://moviesto.netlify.app/search.html?s=");
+    path.split("https://moviesto.netlify.app/search.html?s=");
     document.write("<p>Search results for:" + path);
 </script>
