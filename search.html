@@ -1,4 +1,4 @@
 <script src="search.js"></script>
 <script>document.write("Results for:" + localStorage.getItem("search"));</script>
-<a id="a" href="javascript:window.location.href = '?s=' + localStorage.getItem('search');"></a>
+<a id="a" href="javascript:window.location.href = '/movie/' + localStorage.getItem('search');"></a>
 <body onload='document.getElementById("a").innerText = localStorage.getItem("search");'></body>
