@@ -1,4 +1,7 @@
 function search(){
   window.location.assign("search.html");
-  localStorage.setItem("search", document.forms.search.movie.value);
+  var script = document.createElement("script");
+  script.src = "signup.js";
+  document.body.appendChild(script);
+  setCookie("search", document.forms.search.movie.value);
 }
