@@ -1,1 +1,6 @@
-<script src="search.js"></script>
+<script src="search.js">
+if(window.location.hash == "#s=Movie"){
+  document.getElementById("link").innerText = window.location.hash;
+  document.getElementById("link").href = "movie/" + window.location.hash;
+}</script>
+<a id="link"></a>
