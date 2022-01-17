@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="align.css"/>
 <script>
   //check if user is signed in
-  if(localStorage.getItem("username")){document.write("<p>welcome back:</p>" + getCookie("username"));                           
+  if(localStorage.getItem("username")){document.write("<p>welcome back:</p>" + localStorage.getItem("username"));                           
                                        document.getElementById("signup").style.display ="none"; 
                                        document.getElementById("notice").style.display ="none";
                                       }
