@@ -14,4 +14,4 @@
 <div class="movies" id="movies"><p id="notice" style="display:none;">Please signup to view movies</p><h1>Movies</h1>
   <a href="/movies/#movie">movie</a></div>
 <h1 style="color:white">Recent Searches</h1>
-<script>document.write("<p style='color:white;'>" + localStorage.getItem("search") + "</p>");</script>
+<script>document.write("<a style='color:white;' href='javascript:window.location.assign(localStorage.getItem('search'))" + localStorage.getItem("search") + "</a>");</script>
