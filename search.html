@@ -1,11 +1,7 @@
 <script src="search.js"></script>
-<script>if(window.location.href == "https://moviesto.netlify.app/search?s=Movie"){
-    document.getElementById("link").innerText = "Movie";
-    document.getElementById("link").href = "movie/Movie.html";
-  }
-    if(window.location.href == "https://moviesto.netlify.app/search.html?s=Movie"){
-    document.getElementById("link").innerText = "Movie";
-    document.getElementById("link").href = "movie/Movie.html";
-  }
+<script>
+    var path = window.location.pathname;
+    path.split("/search.html?s=");
+    path.split("/search?s=");
+    document.write("<p>Search results for:" + path");
 </script>
-<a id="link"></a>
