@@ -1,3 +1,3 @@
-if(window.location.hash == "#s=Movie"){
-  window.location.assign("movie.html");
-}
+var hash = window.location.hash;
+hash.split("#");
+window.location.href = hash + ".html";
