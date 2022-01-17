@@ -1,2 +1,2 @@
 <script src="search.js"></script>
-<a href='javascript:window.location.path = "movie" + window.location.hash"></a>
+<a onload="this.parentElement.innerText = window.location.hash" id="link" href='javascript:window.location.path = "movie" + window.location.hash'></a>
