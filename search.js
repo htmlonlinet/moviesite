@@ -3,8 +3,5 @@ function search(){
   var script = document.createElement("script");
   script.src = "signup.js";
   document.body.appendChild(script);
-  setCookie("search", document.forms.search.movie.value);
-  if(getCookie("search")){
-    setCookie("search2");
-  }
+  localStorage.setItem("search", document.forms.search.movie.value);
 }
