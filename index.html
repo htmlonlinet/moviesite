@@ -3,13 +3,10 @@
 <button onclick="search()">search</button>
 <div class="nav"><span onclick="this.parentElement.style.display = 'none';">x</span> <a id="signup" href="signup">signup</a> <a href="javascript:action()">Action</a></div>
 <link rel="stylesheet" href="movies.css"/>
-<script>
+<script src="search.js">
   //check if user is signed in
   if(localStorage.getItem("username")){document.write("<h1 style='color:white'>welcome back:" + localStorage.getItem("username") + "</h1>");                           
                                        document.getElementById("signup").style.display ="none"; 
                                       }else{document.getElementById("notice").style.display ="block";}
-  function search(){
-    window.location.assign("search.html?movie=" + document.forms.search.movie.value;
-  }
 </script>
 <div class="movies" id="movies"><p id="notice" style="display:none;">Please signup to view movies</p><h1>Movies</h1></div>
