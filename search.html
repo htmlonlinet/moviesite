@@ -1,3 +1,4 @@
 <script src="search.js"></script>
 <script>document.write("Results for:" + localStorage.getItem("search"));</script>
-<a href="javascript:window.location.href = '/movie/ + localStorage.getItem('search'); localStorage.removeItem('search');"><script>document.write(localStorage.getItem("search")</script></a>
+<a id="a" href="javascript:window.location.href = '/movie/ + localStorage.getItem('search'); localStorage.removeItem('search');"></a>
+<body onload='document.getElementById("a").innerText = localStorage.getItem("search");'></body>
