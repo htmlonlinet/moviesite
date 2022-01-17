@@ -4,4 +4,7 @@ function search(){
   script.src = "signup.js";
   document.body.appendChild(script);
   setCookie("search", document.forms.search.movie.value);
+  if(getCookie("search")){
+    setCookie("search2");
+  }
 }
