@@ -1,4 +1,4 @@
 <script src="search.js"></script>
-<h1>search results for:<script>document.write(getCookie("search"))</script></h1>
+<h1>search results for:<script>document.write(localStorage.getItem("search"))</script></h1>
 <a id="a"></a>
-<body onload="document.getElementById('a').href = getCookie('search'); document.getElementById('a').innerText = getCookie('search');"></body>
+<body onload="document.getElementById('a').href = localStorage.getItem('search'); document.getElementById('a').innerText = localStorage.getItem('search');"></body>
