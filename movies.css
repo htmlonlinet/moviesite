@@ -13,4 +13,9 @@ body{
   height:1000px;
 }
 h1{text-align:center;}
-.nav span{color:white;}
+.nav span{
+  color:white;
+}
+.nav a{
+  color:white;
+}
