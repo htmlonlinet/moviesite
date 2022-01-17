@@ -3,9 +3,8 @@
 <link rel="stylesheet" href="align.css"/>
 <script>
   //check if user is signed in
-  if(localStorage.getItem("username")){document.write("<p>welcome back:</p>" + localStorage.getItem("username"));                           
+  if(localStorage.getItem("username")){document.write("welcome back:"+ localStorage.getItem("username"));                           
                                        document.getElementById("signup").style.display ="none"; 
-                                       document.getElementById("notice").style.display ="none";
-                                      }
+                                      }else{document.getElementById("notice").style.display ="block";}
 </script>
-<div class="movies" id="movies"><p id="notice">Please signup to view movies</p><h1>Movies</h1></div>
+<div class="movies" id="movies"><p id="notice" style="display:none;">Please signup to view movies</p><h1>Movies</h1></div>
